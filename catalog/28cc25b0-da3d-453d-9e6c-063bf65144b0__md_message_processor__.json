@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "inp-frm-db-JSON"
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "28cc25b0-da3d-453d-9e6c-063bf65144b0",
+    "version": "5.2.0.0"
+}

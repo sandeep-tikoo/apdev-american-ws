@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "inp-frm-db-JSON"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "out-mapper-json-for-dataweave"
+        }
+    },
+    "id": "f5a387c6-f366-4c02-8489-c730ec983250",
+    "version": "5.2.0.0"
+}

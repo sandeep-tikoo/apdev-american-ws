@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:core="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <munit:config name="munit" doc:name="MUnit configuration"/>
+    <spring:beans>
+        <spring:import resource="classpath:implementation.xml"/>
+        <spring:import resource="classpath:interface.xml"/>
+    </spring:beans>
+    <munit:test name="new-test-suite-GetFightsFlowTest" description="Test">
+        <flow-ref name="GetFightsFlow" doc:name="GetFightsFlow"/>
+    </munit:test>
+    <munit:test name="new-test-suite-GetFlightsbyIDFlowTest" description="Test">
+        <flow-ref name="GetFlightsbyIDFlow" doc:name="GetFlightsbyIDFlow"/>
+    </munit:test>
+    <munit:test name="new-test-suite-POST-americanFlowTest" description="Test">
+        <flow-ref name="POST-americanFlow" doc:name="Flow-ref to POST-americanFlow"/>
+    </munit:test>
+    <munit:test name="new-test-suite-Primo_1-mainTest" description="Test">
+        <flow-ref name="Primo_1-main" doc:name="Flow-ref to Primo_1-main"/>
+    </munit:test>
+    <munit:test name="new-test-suite-Primo_1-consoleTest" description="Test">
+        <flow-ref name="Primo_1-console" doc:name="Flow-ref to Primo_1-console"/>
+    </munit:test>
+    <munit:test name="new-test-suite-get:/flights:Primo_1-configTest" description="Test">
+        <flow-ref name="get:/flights:Primo_1-config" doc:name="Flow-ref to get:/flights:Primo_1-config"/>
+    </munit:test>
+    <munit:test name="new-test-suite-interfaceFlowTest" description="Test">
+        <flow-ref name="interfaceFlow" doc:name="Flow-ref to interfaceFlow"/>
+    </munit:test>
+    <munit:test name="new-test-suite-get:/flights/{ID}:Primo_1-configTest" description="Test">
+        <flow-ref name="get:/flights/{ID}:Primo_1-config" doc:name="Flow-ref to get:/flights/{ID}:Primo_1-config"/>
+    </munit:test>
+    <munit:test name="new-test-suite-post:/flights:Primo_1-configTest" description="Test">
+        <flow-ref name="post:/flights:Primo_1-config" doc:name="Flow-ref to post:/flights:Primo_1-config"/>
+    </munit:test>
+</mule>

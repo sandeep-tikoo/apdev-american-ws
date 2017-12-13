@@ -1,0 +1,22 @@
+#%RAML 0.8
+#baseUri: http://localhost:8081/primo_1
+#baseUri: http://jsonplaceholder.typicode.com
+baseUri: http://placeholder.cloudhub.io/users
+title: First
+version: 1.0.development
+/users:
+  get:
+    description: Retrieve a list of all the users
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: user_example.json
+  /userbyid:
+    get:
+      description: Get information about a user by ID
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: user_example.json
